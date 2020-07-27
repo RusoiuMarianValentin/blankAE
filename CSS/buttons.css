@@ -1,0 +1,39 @@
+
+.btn-sc-b{
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+   
+  
+  
+  }
+  .btn-sc-b:focus{
+   outline: none;
+  }
+  .btn-cs-b:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+  
+  
+  }
+  .btn-cs-b:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+  
+  }
+  .btn-sc-b:hover{
+    background: red;
+    cursor: pointer;
+  }
