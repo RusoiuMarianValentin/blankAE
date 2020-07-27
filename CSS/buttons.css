@@ -1,13 +1,13 @@
-
+/* Solid button wit transition  */
 .btn-sc-b{
     background: none;
     border: 1px solid black;
-    border-radius: 4px;
+    border-radius: 0px;
     transition: .6s;
     overflow: hidden;
-   
-  
-  
+    width:100px;
+    height:50px;
+    font-size: 18px;
   }
   .btn-sc-b:focus{
    outline: none;
@@ -34,6 +34,72 @@
   
   }
   .btn-sc-b:hover{
-    background: red;
+    background: black;
+    color: white;
     cursor: pointer;
+  }
+  .btn-sc-b:hover:before{
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  .btn-sc-b:hover:after{
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+  }
+
+
+
+  /* filled button with animaton*/
+  .btn-fc-b{
+    background: none;
+    border: 1px solid black;
+    border-radius: 0px;
+    transition: .6s;
+    overflow: hidden;
+    width:100px;
+    height:50px;
+    font-size: 18px;
+    background: black;
+    color: white;
+  }
+  .btn-fc-b:focus{
+   outline: none;
+  }
+  .btn-fc-b:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+  
+  
+  }
+  .btn-fc-b:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+  
+  }
+  .btn-fc-b:hover{
+    background: transparent;
+    color: black;
+    cursor: pointer;
+  }
+  .btn-fc-b:hover:before{
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  .btn-fc-b:hover:after{
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
   }
