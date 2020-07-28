@@ -1,3 +1,60 @@
 html{
     background: #1e1e24;
 }
+
+/* white rusian*/
+.btn-sc-whiterus{
+    color: #fff8f0;
+    background: none;
+    border: 1px solid #fff8f0;
+    margin:5px;
+    border-radius: 0px;
+    transition: .6s;
+    overflow: hidden;
+    width:100px;
+    height:50px;
+    font-size: 18px;
+  }
+  .btn-sc-whiterus:focus{
+   outline: none;
+  }
+  .btn-sc-whiterus:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+  
+  
+  }
+  .btn-sc-whiterus:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+  
+  }
+  .btn-sc-whiterus:hover{
+    background: #fff8f0;
+    color: #1e1e24;
+    cursor: pointer;
+  }
+  .btn-sc-whiterus:hover:before{
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  .btn-sc-whiterus:hover:after{
+    transform: translate(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+  }
+
+  p{ 
+      color: #fff8f0;
+  }

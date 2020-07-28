@@ -2,6 +2,7 @@
 .btn-sc-b{
     background: none;
     border: 1px solid black;
+    margin:5px;
     border-radius: 0px;
     transition: .6s;
     overflow: hidden;
@@ -52,22 +53,23 @@
 
 
   /* filled button with animaton*/
-  .btn-fc-b{
+  .btn-sc-w{
     background: none;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 0px;
+    margin: 5px;
     transition: .6s;
     overflow: hidden;
     width:100px;
     height:50px;
     font-size: 18px;
-    background: black;
+    background:transparent;
     color: white;
   }
-  .btn-fc-b:focus{
+  .btn-sc-w:focus{
    outline: none;
   }
-  .btn-fc-b:before{
+  .btn-sc-w:before{
     content: '';
     display: block;
     position: absolute;
@@ -78,7 +80,7 @@
   
   
   }
-  .btn-fc-b:after{
+  .btn-sc-w:after{
     content: '';
     display: block;
     position: absolute;
@@ -88,17 +90,17 @@
     transform: translate(-100px) scaleX(-15deg);
   
   }
-  .btn-fc-b:hover{
-    background: transparent;
+  .btn-sc-w:hover{
+    background: white;
     color: black;
     cursor: pointer;
   }
-  .btn-fc-b:hover:before{
+  .btn-sc-w:hover:before{
     transform: translate(300px) skewX(-15deg);
     opacity: .6;
     transition: .7s;
   }
-  .btn-fc-b:hover:after{
+  .btn-sc-w:hover:after{
     transform: translate(300px) skewX(-15deg);
     opacity: 1;
     transition: .7s;
