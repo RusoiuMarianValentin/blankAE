@@ -63,3 +63,13 @@ html{
   background: red;
   cursor: pointer;
 }
+
+.btn-mat-round-b{
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: .6s;
+  overflow: hidden;
+ 
+
+}
